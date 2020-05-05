@@ -20,9 +20,9 @@ p {
   /*width: 100%;*/
    margin: 0;
    padding: 0;
+   display: -webkit-flex;
    display: flex;
-   display: flex;
-   flex-flow: row;
+   -webkit-flex-flow: row;
    flex-flow: row;
 }
 
@@ -39,9 +39,9 @@ footer,
  
 #main > article {
    background: #008000;
-            flex: 4 1 0;
+   -webkit-flex: 4 1 0;
            flex: 4 1 0;
-            order: 2;
+   -webkit-order: 2;
            order: 2;
            display: grid;
            justify-content: center;
@@ -50,7 +50,7 @@ footer,
 #main > nav,
 #main > aside {
    background: #6fe1f9;
-            flex: 1 6 0;
+   -webkit-flex: 1 6 0;
            flex: 1 6 0;
 }
 #main > nav {
@@ -59,7 +59,7 @@ footer,
 }
   
 #main > aside {
-            order: 3;
+   order: 3;
            order: 3;
 }
  
@@ -83,7 +83,7 @@ field  {
 	border: 1px solid #414242;
 	
 }
-	 
+	</style> 
 
 
 footer {
@@ -94,13 +94,13 @@ footer {
   @media all and (max-width: 640px) {
   
    #main, #page {
-            flex-flow: column;
+    -webkit-flex-flow: column;
             flex-flow: column;
 }
 
    #main > article, #main > nav, #main > aside {
     /* Return them to document order */
-            order: 0;
+    -webkit-order: 0;
             order: 0;
    }
   
@@ -154,7 +154,7 @@ figure {
 .imgcontainer {
   position: relative;
   width: 100%;
-  
+  text-align: : center;
   
 }
 
@@ -261,7 +261,6 @@ figure {
 #nav_menu {
   display: none;
 }
-slicknav_menu     
-    {display: block;}
-
-
+.slicknav_menu {
+  display: block;
+}
