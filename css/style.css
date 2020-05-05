@@ -20,9 +20,9 @@ p {
   /*width: 100%;*/
    margin: 0;
    padding: 0;
-   
    display: flex;
-   
+   display: flex;
+   flex-flow: row;
    flex-flow: row;
 }
 
@@ -39,9 +39,9 @@ footer,
  
 #main > article {
    background: #008000;
-   
+            flex: 4 1 0;
            flex: 4 1 0;
-   
+            order: 2;
            order: 2;
            display: grid;
            justify-content: center;
@@ -50,16 +50,16 @@ footer,
 #main > nav,
 #main > aside {
    background: #6fe1f9;
-   
+            flex: 1 6 0;
            flex: 1 6 0;
 }
 #main > nav {
-   
+        order: 1;
            order: 1;
 }
   
 #main > aside {
-   
+            order: 3;
            order: 3;
 }
  
@@ -83,28 +83,31 @@ field  {
 	border: 1px solid #414242;
 	
 }
-	
+	 
 
 
-
+footer {
+  background: #6B8E23;
+}
+ 
 /* Too narrow to support three columns */
   @media all and (max-width: 640px) {
   
    #main, #page {
-    
+            flex-flow: column;
             flex-flow: column;
 }
 
    #main > article, #main > nav, #main > aside {
     /* Return them to document order */
-    
+            order: 0;
             order: 0;
    }
   
    #main > nav, #main > aside, header, footer {
     min-height: 50px;
   
-   
+   }
 }
 
 /* text box  style */
@@ -151,9 +154,10 @@ figure {
 .imgcontainer {
   position: relative;
   width: 100%;
-  text-align:center;
+  
   
 }
+
 
 
 .image {
@@ -171,14 +175,14 @@ figure {
   position: absolute;
   top: 50%;
   left: 50%;
-  
-  
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
   /*Nav Menu*/
-  /* added rounded corners to menu */
+  
 
 #nav_menu ul {
   list-style: none;
@@ -257,9 +261,7 @@ figure {
 #nav_menu {
   display: none;
 }
-.slicknav_menu
-{
-  display: block;
-}
+slicknav_menu     
+    {display: block;}
 
 
