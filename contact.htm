@@ -1,44 +1,30 @@
-
-
 <!doctype html>
 <!--
 *****************************************************************************
-Title: Black's Vintage Video Game Hall Of Fame
+Title: Black'S Vintage Video game hall of fame
 Use: Final Project
 Author:Dan black
 School/Term: Southern Illinois University, Spring 2020
-Developed: April 15 2020
-Tested: April 25, 2020; Passed on  Chrome browser
+Developed: apr 15 2020
+Tested: 5 4 2020; Passed on  Chrome browser
 ******************************************************************************
 -->
 <html lang="EN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<title>Welcome to Black's Bicycles</title>
+<title>Welcome to Black's Vintage Video Game Hall Of Fame</title>
 	
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/slicknav.min.css" rel="stylesheet" type="text/css">
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js" ></script>
-    	
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="css/jquery.slicknav.min.js"></script>
+	
 <script >
     	$(document).ready(function(){
 			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
     	});
     	</script>
-	<style>
-.field  {
-    border-radius: 5px;
-    background: #f1f4f5;
-    padding: 20px; 
-    width: 300px;
-    height: 12px;
-	border: 1px solid #414242;
 	
-}
-	</style> 
 </head>
 <body>
 	
@@ -60,43 +46,33 @@ Tested: April 25, 2020; Passed on  Chrome browser
     <!--<nav>nav</nav>
     <aside>aside</aside>-->
     
-     <article>
+        <article>
       
-		 <div class="form" align="left">
+		 <div class="form">
        <form action="response.htm" method="GET">
-            <div>     
-				
-				<table width="100%" border="1" cellspacing="2" cellpadding="2">
- 
-    
-    <tr>
-      <td><label for="email">Email</label></td>
-      <td><input class="field" type="email" name="email" id="email" required
-                 minlength="10" maxlength="25"></td>
-    
-    <tr>
-      <td colspan="2"><textarea id="Message" name="Message" minlength="40" maxlength="200" style="width:100%; height:100px;"></textarea></td>
-      
-    </tr>
-	  <tr>
-      <td colspan="2"><button type="Submit">Submit</button><button type="Reset">Reset</button></td>
-      
-    </tr>
-  
-
-                        
-                        
-  
         
-            
-            
-            
+           <H2> Please enter your email address and any comments you have below.</H2>
         
+      <label for="email">Email</label>
+               
+      <input class="field" type="email" name="email" id="email" required
+                 minlength="10" maxlength="50">
+    
+    
+    
+      <textarea id="Message" name="Message" minlength="40" maxlength="200" style="width:100%; height:100px;"></textarea>
+      
+    
+	  
+         <button type="Submit">Submit</button><button type="Reset">Reset</button>
+           </form>
+         </div>        
+           
 			
-</article>
-</div>
+        </article>
+    </div>
 <footer>
-<p>&copy; Black's VVGHOF Copyright 2020 Edwardsville Il</p>
+<p>&copy; Black's VVGHoF Copyright 2020 Edwardsville Il</p>
 </footer>
 			
 </body>
