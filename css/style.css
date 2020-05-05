@@ -83,7 +83,7 @@ field  {
 	border: 1px solid #414242;
 	
 }
-</STYLE> 	 
+	 
 
 
 footer {
@@ -162,8 +162,9 @@ figure {
 
 .image {
   
-  width: 100%;
+  width: 40%;
   height: auto;
+  position: relative;
 }
 
 
@@ -263,5 +264,4 @@ figure {
 .slicknav_menu {
   display: block;
 }
-
 
